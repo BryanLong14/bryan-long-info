@@ -199,91 +199,75 @@ export default function Home() {
             AI Product Workflows
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-4xl mx-auto mb-12">
-            Using AI tools like Figma Make, Vercel V0, and Bolt.new, I compress what used to be a multi-week, multi-team process (research to design to engineering prototype) into a workflow I can do in hours. This shifts my PM role from requesting prototypes to directly creating and iterating on them, dramatically shrinking iteration cycles and reducing early dependence on design and engineering capacity.
+            To explore how AI tools can accelerate product development, I gave the same PRD to three different platforms: Figma Make, Vercel V0, and Bolt.new. Each tool interpreted the requirements differently, revealing unique strengths for UI exploration, code generation, and full-stack prototyping.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mx-auto max-w-7xl mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mx-auto max-w-7xl">
             {/* Card 1 - Figma Make */}
-            <Card className="overflow-hidden border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-500 transition-all duration-200 h-full bg-white dark:bg-gray-900 hover:transform hover:-translate-y-1 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-xl text-gray-900 dark:text-white">
-                  <span className="font-bold">Figma Make</span> - UI Exploration
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-700 dark:text-gray-300">
-                  Generated responsive dashboard layouts and refined them directly in Figma to explore information architecture, visual hierarchy, and interaction patterns for a Developer Dashboard concept.
-                </p>
-                <ul className="list-disc list-inside text-gray-600 dark:text-gray-400 space-y-2 text-sm">
-                  <li><span className="font-medium">Best for:</span> fast visual exploration and interaction concepts.</li>
-                  <li><span className="font-medium">Output:</span> design system-aligned frames ready for design review.</li>
-                </ul>
-              </CardContent>
-              <CardFooter>
-                <Button asChild className="bg-[#025997] hover:bg-[#074a7c] text-white">
-                  <Link href="https://table-react-20415308.figma.site/" target="_blank" rel="noopener noreferrer">
-                    View Prototype <ArrowUpRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardFooter>
-            </Card>
+            <Link href="https://table-react-20415308.figma.site/" target="_blank" rel="noopener noreferrer" className="block">
+              <Card className="overflow-hidden border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-500 transition-all duration-200 h-full bg-white dark:bg-gray-900 hover:transform hover:-translate-y-1 hover:shadow-xl">
+                <div className="relative h-48">
+                  <Image src="/images/ai-workflow-figma.png" alt="Figma Make - API Request Activity" fill className="object-cover" />
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-2xl text-gray-900 dark:text-white">Figma Make</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-medium uppercase tracking-wide text-sm text-[#025997] dark:text-gray-400 mb-2">
+                      Tool Strength
+                    </h3>
+                    <p className="text-gray-700 dark:text-gray-300">
+                      Fast visual exploration and interaction concepts with design system-aligned frames ready for design review.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
 
             {/* Card 2 - Vercel V0 */}
-            <Card className="overflow-hidden border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-500 transition-all duration-200 h-full bg-white dark:bg-gray-900 hover:transform hover:-translate-y-1 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-xl text-gray-900 dark:text-white">
-                  <span className="font-bold">Vercel V0</span> - React UI from Text
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-700 dark:text-gray-300">
-                  Turned product requirements into React-based dashboard screens using modern component libraries, validating how quickly a PM can move from concept to production-ready front-end.
-                </p>
-                <ul className="list-disc list-inside text-gray-600 dark:text-gray-400 space-y-2 text-sm">
-                  <li><span className="font-medium">Best for:</span> generating real, editable React components from prompts.</li>
-                  <li><span className="font-medium">Output:</span> code that engineers can refine and extend.</li>
-                </ul>
-              </CardContent>
-              <CardFooter>
-                <Button asChild className="bg-[#025997] hover:bg-[#074a7c] text-white">
-                  <Link href="https://v0-developer-dashboard-design-xi.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    View Prototype <ArrowUpRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardFooter>
-            </Card>
+            <Link href="https://v0-developer-dashboard-design-xi.vercel.app/" target="_blank" rel="noopener noreferrer" className="block">
+              <Card className="overflow-hidden border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-500 transition-all duration-200 h-full bg-white dark:bg-gray-900 hover:transform hover:-translate-y-1 hover:shadow-xl">
+                <div className="relative h-48">
+                  <Image src="/images/ai-workflow-vercel.png" alt="Vercel V0 - Webhook Delivery Status" fill className="object-cover" />
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-2xl text-gray-900 dark:text-white">Vercel V0</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-medium uppercase tracking-wide text-sm text-[#025997] dark:text-gray-400 mb-2">
+                      Tool Strength
+                    </h3>
+                    <p className="text-gray-700 dark:text-gray-300">
+                      Generating real, editable React components from prompts that engineers can refine and extend.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
 
             {/* Card 3 - Bolt.new */}
-            <Card className="overflow-hidden border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-500 transition-all duration-200 h-full bg-white dark:bg-gray-900 hover:transform hover:-translate-y-1 hover:shadow-xl md:col-span-2 xl:col-span-1">
-              <CardHeader>
-                <CardTitle className="text-xl text-gray-900 dark:text-white">
-                  <span className="font-bold">Bolt.new</span> - Full-Stack in the Browser
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-700 dark:text-gray-300">
-                  Built a fully functional developer dashboard experience, including layout and data wiring, directly in the browser, testing how far AI-generated code can go before engineering handoff.
-                </p>
-                <ul className="list-disc list-inside text-gray-600 dark:text-gray-400 space-y-2 text-sm">
-                  <li><span className="font-medium">Best for:</span> fast, full-stack prototypes with live behavior.</li>
-                  <li><span className="font-medium">Output:</span> deployable prototype that demonstrates end-to-end flows.</li>
-                </ul>
-              </CardContent>
-              <CardFooter>
-                <Button asChild className="bg-[#025997] hover:bg-[#074a7c] text-white">
-                  <Link href="https://north-developer-dash-fod9.bolt.host/dashboard" target="_blank" rel="noopener noreferrer">
-                    View Prototype <ArrowUpRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardFooter>
-            </Card>
-          </div>
-
-          {/* Impact Paragraph */}
-          <div className="max-w-4xl mx-auto">
-            <p className="text-gray-600 dark:text-gray-300 text-center italic">
-              Across these tools, I use a repeatable AI-enhanced workflow: start from written requirements, generate multiple prototype directions in parallel, validate flows against real user and developer needs, and then bring engineers into the process only once patterns are validated. This increases the number of concepts I can test per sprint and improves time-to-market for new product releases.
-            </p>
+            <Link href="https://north-developer-dash-fod9.bolt.host/dashboard" target="_blank" rel="noopener noreferrer" className="block md:col-span-2 xl:col-span-1">
+              <Card className="overflow-hidden border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-500 transition-all duration-200 h-full bg-white dark:bg-gray-900 hover:transform hover:-translate-y-1 hover:shadow-xl">
+                <div className="relative h-48">
+                  <Image src="/images/ai-workflow-bolt.png" alt="Bolt.new - Recent API Activity" fill className="object-cover" />
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-2xl text-gray-900 dark:text-white">Bolt.new</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-medium uppercase tracking-wide text-sm text-[#025997] dark:text-gray-400 mb-2">
+                      Tool Strength
+                    </h3>
+                    <p className="text-gray-700 dark:text-gray-300">
+                      Fast, full-stack prototypes with live behavior and deployable code that demonstrates end-to-end flows.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
         </div>
       </section>
