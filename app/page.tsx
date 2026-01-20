@@ -58,7 +58,7 @@ export default function Home() {
         <div className="grid gap-10 md:grid-cols-2 md:gap-8 lg:gap-12 items-center">
           <div className="overflow-hidden">
             <h1 className="font-bold tracking-tight mb-6 text-gray-900 dark:text-gray-100">
-              <span className="text-[2.25rem] sm:text-[2.5rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.75rem] 2xl:text-[4.5rem] block">FinTech & Payments</span>
+              <span className="text-[2.25rem] sm:text-[2.5rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[3.75rem] 2xl:text-[4.3rem] block">FinTech & Payments</span>
               <div className="pt-2"></div>
               <span className="text-[1.5rem] sm:text-[1.75rem] md:text-[1.75rem] lg:text-[2.25rem] xl:text-[2.75rem] 2xl:text-[3.25rem] block" style={{ color: "#074a7c" }}>
                 <span className="dark:hidden">Senior Director of Product</span>
