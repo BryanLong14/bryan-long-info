@@ -247,27 +247,29 @@ export default function Home() {
               </Card>
             </Link>
 
-            {/* Card 3 - Bolt.new */}
-            <Link href="https://north-developer-dash-fod9.bolt.host/dashboard" target="_blank" rel="noopener noreferrer" className="block md:col-span-2 xl:col-span-1">
-              <Card className="overflow-hidden border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-500 transition-all duration-200 h-full bg-white dark:bg-gray-900 hover:transform hover:-translate-y-1 hover:shadow-xl">
-                <div className="relative h-48">
-                  <Image src="/images/ai-workflow-bolt.png" alt="Bolt.new - Recent API Activity" fill className="object-cover" />
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-2xl text-gray-900 dark:text-white">Bolt.new</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <h3 className="font-medium uppercase tracking-wide text-sm text-[#025997] dark:text-gray-400 mb-2">
-                      Tool Strength
-                    </h3>
-                    <p className="text-gray-700 dark:text-gray-300">
-                      Fast, full-stack prototypes with live behavior and deployable code that demonstrates end-to-end flows.
-                    </p>
+            {/* Card 3 - Bolt.new - Hidden on md screens (2 column), visible on mobile and xl+ */}
+            <div className="hidden xl:block">
+              <Link href="https://north-developer-dash-fod9.bolt.host/dashboard" target="_blank" rel="noopener noreferrer" className="block">
+                <Card className="overflow-hidden border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-500 transition-all duration-200 h-full bg-white dark:bg-gray-900 hover:transform hover:-translate-y-1 hover:shadow-xl">
+                  <div className="relative h-48">
+                    <Image src="/images/ai-workflow-bolt.png" alt="Bolt.new - Recent API Activity" fill className="object-cover" />
                   </div>
-                </CardContent>
-              </Card>
-            </Link>
+                  <CardHeader>
+                    <CardTitle className="text-2xl text-gray-900 dark:text-white">Bolt.new</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div>
+                      <h3 className="font-medium uppercase tracking-wide text-sm text-[#025997] dark:text-gray-400 mb-2">
+                        Tool Strength
+                      </h3>
+                      <p className="text-gray-700 dark:text-gray-300">
+                        Fast, full-stack prototypes with live behavior and deployable code that demonstrates end-to-end flows.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -363,7 +365,7 @@ export default function Home() {
       </section>
 
       {/* Speaking Section */}
-      <section id="speaking" className="container py-24 md:py-32">
+      <section id="speaking" className="bg-slate-50 dark:bg-gray-900 py-24 md:py-32">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900 dark:text-gray-100">Speaking</h2>
         <div className="max-w-4xl mx-auto">
           <Card className="border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
@@ -411,7 +413,7 @@ export default function Home() {
       </section>
 
       {/* Resume Section */}
-      <section id="resume" className="bg-slate-50 dark:bg-gray-900 py-24 md:py-32">
+      <section id="resume" className="py-24 md:py-32">
         <div className="container">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900 dark:text-gray-100">Resume</h2>
           <div className="max-w-4xl mx-auto">
