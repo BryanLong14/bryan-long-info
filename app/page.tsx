@@ -271,6 +271,11 @@ export default function Home() {
               </Link>
             </div>
           </div>
+
+          {/* Summary paragraph */}
+          <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-4xl mx-auto mt-12">
+            Using AI tools like Figma Make, Vercel V0, and Bolt.new, I compress what used to be a multi-week, multi-team process (research to design to engineering prototype) into a workflow I can do in hours. This shifts my PM role from requesting prototypes to directly creating and iterating on them, dramatically shrinking iteration cycles and reducing early dependence on design and engineering capacity.
+          </p>
         </div>
       </section>
 
