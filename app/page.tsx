@@ -56,7 +56,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="container py-24 md:py-32">
         <div className="grid gap-10 md:grid-cols-2 md:gap-16 items-center">
-          <div className="pr-4 md:pr-8">
+          <div className="pr-6 md:pr-12 lg:pr-16">
             <h1 className="font-bold tracking-tight mb-6 text-gray-900 dark:text-gray-100">
               <span className="text-[2.25rem] sm:text-[2.75rem] md:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] 2xl:text-[4.5rem] block whitespace-nowrap">FinTech & Payments</span>
               <div className="pt-2"></div>
