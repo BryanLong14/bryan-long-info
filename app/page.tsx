@@ -57,19 +57,18 @@ export default function Home() {
       <section className="container py-24 md:py-32">
         <div className="grid gap-10 md:grid-cols-2 md:gap-16 items-center">
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-gray-900 dark:text-gray-100">
-              FinTech & Payments
+            <h1 className="font-bold tracking-tight mb-6 text-gray-900 dark:text-gray-100">
+              <span className="text-[2.5rem] md:text-[3.5rem] lg:text-[4rem] block">FinTech & Payments</span>
               <div className="pt-2"></div>
-              <span className="text-5xl md:text-6xl" style={{ color: "#074a7c" }}>
-                <span className="dark:hidden">Director of Product</span>
+              <span className="text-[2.5rem] md:text-[3.5rem] lg:text-[4rem] block" style={{ color: "#074a7c" }}>
+                <span className="dark:hidden">Senior Director of Product</span>
               </span>
-              <span className="text-5xl md:text-6xl hidden dark:inline" style={{ color: "#4f5b66" }}>
-                Director of Product
+              <span className="text-[2.5rem] md:text-[3.5rem] lg:text-[4rem] hidden dark:block" style={{ color: "#4f5b66" }}>
+                Senior Director of Product
               </span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              Director of Product with extensive expertise building and scaling API developer ecosystems and partner
-              platforms. Over a decade of experience leading high-performing teams.
+              Product leader with 15+ years of experience leading high-performing teams, specializing over the last decade in fintech and payments. Enterprise SaaS delivery of API developer platforms, marketplaces, and developer experience initiatives, including AI-powered workflows that accelerate delivery and improve developer productivity.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button asChild size="lg" className="bg-[#025997] hover:bg-[#074a7c] text-white">
@@ -113,7 +112,7 @@ export default function Home() {
                     My Role
                   </h3>
                   <p className="text-gray-700 dark:text-gray-300">
-                    As the Director of Product for North Developer I lead the strategy, development, and optimization of
+                    As the Senior Director of Product for North Developer I lead the strategy, development, and optimization of
                     our payment API platform.
                   </p>
                 </div>
