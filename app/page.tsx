@@ -68,7 +68,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              Product leader with 15+ years of experience leading high-performing teams, specializing over the last decade in fintech and payments. Enterprise SaaS delivery of API developer platforms, marketplaces, and developer experience initiatives, including AI-powered workflows that accelerate delivery and improve developer productivity.
+              Product leader with 15+ years of experience leading high-performing teams specializing in fintech and payments. Enterprise SaaS delivery of API developer platforms, marketplaces, and developer experience initiatives, including AI-powered workflows that accelerate delivery and improve developer productivity.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button asChild size="lg" className="bg-[#025997] hover:bg-[#074a7c] text-white">
