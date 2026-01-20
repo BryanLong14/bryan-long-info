@@ -58,12 +58,12 @@ export default function Home() {
         <div className="grid gap-10 md:grid-cols-2 md:gap-16 items-center">
           <div>
             <h1 className="font-bold tracking-tight mb-6 text-gray-900 dark:text-gray-100">
-              <span className="text-[2.5rem] md:text-[3.5rem] lg:text-[4rem] block">FinTech & Payments</span>
+              <span className="text-[1.75rem] sm:text-[2rem] md:text-[2.25rem] lg:text-[2.75rem] xl:text-[3.25rem] 2xl:text-[3.75rem] block whitespace-nowrap">FinTech & Payments</span>
               <div className="pt-2"></div>
-              <span className="text-[2.5rem] md:text-[3.5rem] lg:text-[4rem] block" style={{ color: "#074a7c" }}>
+              <span className="text-[1.75rem] sm:text-[2rem] md:text-[2.25rem] lg:text-[2.75rem] xl:text-[3.25rem] 2xl:text-[3.75rem] block whitespace-nowrap" style={{ color: "#074a7c" }}>
                 <span className="dark:hidden">Senior Director of Product</span>
               </span>
-              <span className="text-[2.5rem] md:text-[3.5rem] lg:text-[4rem] hidden dark:block" style={{ color: "#4f5b66" }}>
+              <span className="text-[1.75rem] sm:text-[2rem] md:text-[2.25rem] lg:text-[2.75rem] xl:text-[3.25rem] 2xl:text-[3.75rem] hidden dark:block whitespace-nowrap" style={{ color: "#4f5b66" }}>
                 Senior Director of Product
               </span>
             </h1>
