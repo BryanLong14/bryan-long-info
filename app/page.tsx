@@ -442,7 +442,7 @@ export default function Home() {
               </CardContent>
               <CardFooter className="flex justify-center">
                 <Button asChild className="bg-[#025997] hover:bg-[#074a7c] text-white">
-                  <a href="/files/2025-bryan-long-resume.png" download="Bryan_Long_Resume.png">
+                  <a href="/files/bryan-long-resume-sr-director.pdf" download="Bryan_Long_Resume.pdf">
                     <Download className="mr-2 h-4 w-4" />
                     Download Resume
                   </a>
