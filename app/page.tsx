@@ -355,6 +355,38 @@ export default function Home() {
                       </div>
                     </div>
                   </Link>
+
+                  <Link
+                    href="https://developer.north.com/blog/embedded-payments-and-embedded-finance"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <div className="transition-all duration-200 border border-white/20 dark:border-gray-700/50 rounded-lg p-4 hover:transform hover:-translate-y-1 hover:shadow-xl hover:bg-white/10 dark:hover:bg-gray-800/40">
+                      <div className="flex flex-col md:flex-row gap-4">
+                        <div className="relative w-full md:w-1/3 h-40 rounded-md overflow-hidden">
+                          <Image
+                            src="/images/embedded-payments-finance.jpg"
+                            alt="Embedded Payments and Finance"
+                            fill
+                            className="object-cover"
+                          />
+                        </div>
+                        <div className="md:w-2/3">
+                          <h3 className="font-medium text-lg text-white dark:text-gray-400">
+                            Unlocking Value with Embedded Payments and Embedded Finance: A Guide for ISVs
+                          </h3>
+                          <div className="flex items-center text-gray-300 text-sm mt-2">
+                            <Calendar className="h-4 w-4 mr-1" />
+                            <span>August 4, 2024</span>
+                          </div>
+                          <p className="text-gray-300 mt-3">
+                            A comprehensive guide for software vendors on integrating payment processing and financial services directly into their platforms to enhance user experience and unlock new revenue streams.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
                 </div>
               </CardContent>
               <CardFooter>
