@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowUpRight, Linkedin, Download, Calendar } from "lucide-react"
+import { ArrowUpRight, Linkedin, Download } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -21,6 +21,12 @@ export default function Home() {
               className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-[#025997] dark:hover:text-[#4f5b66] transition-colors"
             >
               Projects
+            </a>
+            <a
+              href="#ai-workflows"
+              className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-[#025997] dark:hover:text-[#4f5b66] transition-colors"
+            >
+              AI Workflows
             </a>
             <a
               href="#writing"
@@ -186,8 +192,95 @@ export default function Home() {
         </div>
       </section>
 
+      {/* AI Product Workflows Section */}
+      <section id="ai-workflows" className="bg-slate-50 dark:bg-gray-900 py-24 md:py-32">
+        <div className="container">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-900 dark:text-gray-100">
+            AI Product Workflows
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-4xl mx-auto mb-12">
+            To explore how AI tools can accelerate product development, I gave the same PRD to three different platforms: Figma Make, Vercel V0, and Bolt.new. Each tool interpreted the requirements differently, revealing unique strengths for UI exploration, code generation, and full-stack prototyping.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mx-auto max-w-7xl">
+            {/* Card 1 - Figma Make */}
+            <Link href="https://table-react-20415308.figma.site/" target="_blank" rel="noopener noreferrer" className="block">
+              <Card className="overflow-hidden border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-500 transition-all duration-200 h-full bg-white dark:bg-gray-900 hover:transform hover:-translate-y-1 hover:shadow-xl">
+                <div className="relative h-48">
+                  <Image src="/images/ai-workflow-figma.png" alt="Figma Make - API Request Activity" fill className="object-cover" />
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-2xl text-gray-900 dark:text-white">Figma Make</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-medium uppercase tracking-wide text-sm text-[#025997] dark:text-gray-400 mb-2">
+                      Tool Strength
+                    </h3>
+                    <p className="text-gray-700 dark:text-gray-300">
+                      Fast visual exploration and interaction concepts with design system-aligned frames ready for design review.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+
+            {/* Card 2 - Vercel V0 */}
+            <Link href="https://v0-developer-dashboard-design-xi.vercel.app/" target="_blank" rel="noopener noreferrer" className="block">
+              <Card className="overflow-hidden border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-500 transition-all duration-200 h-full bg-white dark:bg-gray-900 hover:transform hover:-translate-y-1 hover:shadow-xl">
+                <div className="relative h-48">
+                  <Image src="/images/ai-workflow-vercel.png" alt="Vercel V0 - Webhook Delivery Status" fill className="object-cover" />
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-2xl text-gray-900 dark:text-white">Vercel V0</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <h3 className="font-medium uppercase tracking-wide text-sm text-[#025997] dark:text-gray-400 mb-2">
+                      Tool Strength
+                    </h3>
+                    <p className="text-gray-700 dark:text-gray-300">
+                      Generating real, editable React components from prompts that engineers can refine and extend.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+
+            {/* Card 3 - Bolt.new - Hidden on md screens (2 column), visible on mobile and xl+ */}
+            <div className="hidden xl:block">
+              <Link href="https://north-developer-dash-fod9.bolt.host/dashboard" target="_blank" rel="noopener noreferrer" className="block">
+                <Card className="overflow-hidden border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-500 transition-all duration-200 h-full bg-white dark:bg-gray-900 hover:transform hover:-translate-y-1 hover:shadow-xl">
+                  <div className="relative h-48">
+                    <Image src="/images/ai-workflow-bolt.png" alt="Bolt.new - Recent API Activity" fill className="object-cover" />
+                  </div>
+                  <CardHeader>
+                    <CardTitle className="text-2xl text-gray-900 dark:text-white">Bolt.new</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div>
+                      <h3 className="font-medium uppercase tracking-wide text-sm text-[#025997] dark:text-gray-400 mb-2">
+                        Tool Strength
+                      </h3>
+                      <p className="text-gray-700 dark:text-gray-300">
+                        Fast, full-stack prototypes with live behavior and deployable code that demonstrates end-to-end flows.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            </div>
+          </div>
+
+          {/* Summary paragraph */}
+          <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-4xl mx-auto mt-12">
+            Using AI tools like Figma Make, Vercel V0, and Bolt.new, I compress what used to be a multi-week, multi-team process (research to design to engineering prototype) into a workflow I can do in hours. This shifts my PM role from requesting prototypes to directly creating and iterating on them, dramatically shrinking iteration cycles and reducing early dependence on design and engineering capacity.
+          </p>
+        </div>
+      </section>
+
       {/* Technical Writing Section */}
-      <section id="writing" className="bg-slate-50 dark:bg-gray-900 py-24 md:py-32">
+      <section id="writing" className="py-24 md:py-32">
         <div className="container">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900 dark:text-gray-100">
             Technical Writing
@@ -217,13 +310,37 @@ export default function Home() {
                           <h3 className="font-medium text-lg text-white dark:text-gray-400">
                             Benefits of the North Semi-Integrated Cloud API
                           </h3>
-                          <div className="flex items-center text-gray-300 text-sm mt-2">
-                            <Calendar className="h-4 w-4 mr-1" />
-                            <span>December 11, 2024</span>
-                          </div>
                           <p className="text-gray-300 mt-3">
                             Explore the advantages of using North's Semi-Integrated Cloud API for payment processing,
                             including enhanced security, simplified compliance, and improved customer experience.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+
+                  <Link
+                    href="https://developer.north.com/blog/embedded-payments-and-embedded-finance"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <div className="transition-all duration-200 border border-white/20 dark:border-gray-700/50 rounded-lg p-4 hover:transform hover:-translate-y-1 hover:shadow-xl hover:bg-white/10 dark:hover:bg-gray-800/40">
+                      <div className="flex flex-col md:flex-row gap-4">
+                        <div className="relative w-full md:w-1/3 h-40 rounded-md overflow-hidden">
+                          <Image
+                            src="/images/embedded-payments-finance.jpg"
+                            alt="Embedded Payments and Finance"
+                            fill
+                            className="object-cover"
+                          />
+                        </div>
+                        <div className="md:w-2/3">
+                          <h3 className="font-medium text-lg text-white dark:text-gray-400">
+                            Unlocking Value with Embedded Payments and Embedded Finance: A Guide for ISVs
+                          </h3>
+                          <p className="text-gray-300 mt-3">
+                            A comprehensive guide for software vendors on integrating payment processing and financial services directly into their platforms to enhance user experience and unlock new revenue streams.
                           </p>
                         </div>
                       </div>
@@ -250,10 +367,6 @@ export default function Home() {
                           <h3 className="font-medium text-lg text-white dark:text-gray-400">
                             Integrated vs. Semi-Integrated Payment Architecture Solutions
                           </h3>
-                          <div className="flex items-center text-gray-300 text-sm mt-2">
-                            <Calendar className="h-4 w-4 mr-1" />
-                            <span>January 8, 2024</span>
-                          </div>
                           <p className="text-gray-300 mt-3">
                             A comprehensive comparison of integrated and semi-integrated payment architectures, helping
                             developers choose the right solution for their specific needs.
@@ -277,7 +390,7 @@ export default function Home() {
       </section>
 
       {/* Speaking Section */}
-      <section id="speaking" className="container py-24 md:py-32">
+      <section id="speaking" className="bg-slate-50 dark:bg-gray-900 py-24 md:py-32">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900 dark:text-gray-100">Speaking</h2>
         <div className="max-w-4xl mx-auto">
           <Card className="border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
@@ -311,6 +424,17 @@ export default function Home() {
                     allowFullScreen
                   ></iframe>
                 </div>
+                <div className="aspect-video overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/2byNhygfMlA?rel=0&showinfo=0&vq=hd1080"
+                    title="Featured YouTube Video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
               </div>
             </CardContent>
             <CardFooter>
@@ -325,7 +449,7 @@ export default function Home() {
       </section>
 
       {/* Resume Section */}
-      <section id="resume" className="bg-slate-50 dark:bg-gray-900 py-24 md:py-32">
+      <section id="resume" className="py-24 md:py-32">
         <div className="container">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900 dark:text-gray-100">Resume</h2>
           <div className="max-w-4xl mx-auto">
@@ -349,7 +473,7 @@ export default function Home() {
               </CardContent>
               <CardFooter className="flex justify-center">
                 <Button asChild className="bg-[#025997] hover:bg-[#074a7c] text-white">
-                  <a href="/files/2025-bryan-long-resume.png" download="Bryan_Long_Resume.png">
+                  <a href="/files/bryan-long-resume-sr-director.jpg" download="Bryan_Long_Resume.jpg">
                     <Download className="mr-2 h-4 w-4" />
                     Download Resume
                   </a>
