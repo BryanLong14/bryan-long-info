@@ -392,7 +392,7 @@ export default function Home() {
       {/* Speaking Section */}
       <section id="speaking" className="bg-slate-50 dark:bg-gray-900 py-24 md:py-32">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900 dark:text-gray-100">Speaking</h2>
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <Card className="border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
             <CardHeader>
               <CardTitle className="text-gray-900 dark:text-gray-400">Featured Videos</CardTitle>
@@ -401,7 +401,7 @@ export default function Home() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div className="aspect-video overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800">
                   <iframe
                     width="100%"
