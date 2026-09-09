@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowUpRight, Linkedin, Download, Calendar } from "lucide-react"
+import { ArrowUpRight, Linkedin, Download } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -310,10 +310,6 @@ export default function Home() {
                           <h3 className="font-medium text-lg text-white dark:text-gray-400">
                             Benefits of the North Semi-Integrated Cloud API
                           </h3>
-                          <div className="flex items-center text-gray-300 text-sm mt-2">
-                            <Calendar className="h-4 w-4 mr-1" />
-                            <span>December 11, 2024</span>
-                          </div>
                           <p className="text-gray-300 mt-3">
                             Explore the advantages of using North's Semi-Integrated Cloud API for payment processing,
                             including enhanced security, simplified compliance, and improved customer experience.
@@ -343,10 +339,6 @@ export default function Home() {
                           <h3 className="font-medium text-lg text-white dark:text-gray-400">
                             Unlocking Value with Embedded Payments and Embedded Finance: A Guide for ISVs
                           </h3>
-                          <div className="flex items-center text-gray-300 text-sm mt-2">
-                            <Calendar className="h-4 w-4 mr-1" />
-                            <span>August 4, 2024</span>
-                          </div>
                           <p className="text-gray-300 mt-3">
                             A comprehensive guide for software vendors on integrating payment processing and financial services directly into their platforms to enhance user experience and unlock new revenue streams.
                           </p>
@@ -375,10 +367,6 @@ export default function Home() {
                           <h3 className="font-medium text-lg text-white dark:text-gray-400">
                             Integrated vs. Semi-Integrated Payment Architecture Solutions
                           </h3>
-                          <div className="flex items-center text-gray-300 text-sm mt-2">
-                            <Calendar className="h-4 w-4 mr-1" />
-                            <span>January 8, 2024</span>
-                          </div>
                           <p className="text-gray-300 mt-3">
                             A comprehensive comparison of integrated and semi-integrated payment architectures, helping
                             developers choose the right solution for their specific needs.
@@ -431,6 +419,17 @@ export default function Home() {
                     height="100%"
                     src="https://www.youtube.com/embed/scueMk_aEnU?rel=0&showinfo=0&vq=hd1080"
                     title="North Developer Featured Video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="aspect-video overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/2byNhygfMlA?rel=0&showinfo=0&vq=hd1080"
+                    title="Featured YouTube Video"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
