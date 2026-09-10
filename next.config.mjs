@@ -16,7 +16,6 @@ const nextConfig = {
       },
     ],
   },
-  swcMinify: true,
   productionBrowserSourceMaps: false,
 };
 
