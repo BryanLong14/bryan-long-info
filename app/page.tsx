@@ -463,7 +463,7 @@ export default function Home() {
               <CardContent>
                 <div className="relative w-full max-w-2xl mx-auto border border-slate-200 dark:border-gray-800 rounded-lg overflow-hidden mb-6 shadow-md dark:shadow-gray-900/30">
                   <Image
-                    src="/images/bryan-long-new-resume-preview.png"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Bryan%20Long%20Resume%20Senior%20Director%20of%20Product%20Management%202026-7TpHMCROwcChCaNiwGJPDcB3lWv9al.jpg"
                     alt="Bryan Long Resume Preview"
                     width={800}
                     height={1000}
@@ -473,7 +473,7 @@ export default function Home() {
               </CardContent>
               <CardFooter className="flex justify-center">
                 <Button asChild className="bg-[#025997] hover:bg-[#074a7c] text-white">
-                  <a href="/files/bryan-long-resume-sr-director.jpg" download="Bryan_Long_Resume.jpg">
+                  <a href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Bryan%20Long%20Resume%20Senior%20Director%20of%20Product%20Management%202026-7TpHMCROwcChCaNiwGJPDcB3lWv9al.jpg" download="Bryan_Long_Resume_Senior_Director_Product_Management_2026.jpg">
                     <Download className="mr-2 h-4 w-4" />
                     Download Resume
                   </a>
