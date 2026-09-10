@@ -36,7 +36,7 @@ export default function Home() {
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">About Me</h2>
           <p className="text-lg text-gray-700 mb-6">
-            I am a Director of Product with deep experience in payments, FinTech, and designing functional user
+            I am a Senior Director of Product with deep experience in payments, FinTech, and designing functional user
             experiences.
           </p>
           <div className="flex space-x-4">
@@ -58,14 +58,14 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <ProjectCard
               title="North Developer"
-              role="Director of Product"
+              role="Senior Director of Product"
               description="North Developer is a developer portal designed for software platforms integrating credit card processing."
               imageUrl="/placeholder.svg?height=300&width=400"
               projectUrl="https://developer.north.com/"
             />
             <ProjectCard
               title="North Exchange"
-              role="Director of Product"
+              role="Senior Director of Product"
               description="North Exchange is an app marketplace for businesses looking to add services to their merchant processing account."
               imageUrl="/placeholder.svg?height=300&width=400"
               projectUrl="https://exchange.north.com/"

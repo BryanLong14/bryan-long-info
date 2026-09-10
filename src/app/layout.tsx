@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Bryan Long - Product Director Portfolio",
-  description: "Portfolio of Bryan Long, Director of Product with experience in payments, FinTech, and UX design.",
+  description: "Senior Director of Product with 15+ years building and scaling API developer ecosystems processing $100B+ in annual transaction volume for fintech and payments platforms.",
 }
 
 export default function RootLayout({

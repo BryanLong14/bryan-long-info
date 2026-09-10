@@ -7,9 +7,9 @@ const siteUrl = "https://bryanlong.info"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Bryan Long | Director of Product",
+  title: "Bryan Long | Senior Director of Product",
   description:
-    "Director of Product with extensive expertise building and scaling API developer ecosystems and partner platforms in the payments and FinTech industry.",
+    "Senior Director of Product with 15+ years building and scaling API developer ecosystems processing $100B+ in annual transaction volume for fintech and payments platforms.",
   keywords: ["product director", "fintech", "payments", "API", "developer ecosystem", "product management"],
   robots: {
     index: true,
@@ -34,24 +34,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    title: "Bryan Long | Director of Product",
+    title: "Bryan Long | Senior Director of Product",
     description:
-      "Director of Product with extensive expertise building and scaling API developer ecosystems and partner platforms in the payments and FinTech industry.",
+      "Senior Director of Product with 15+ years building and scaling API developer ecosystems processing $100B+ in annual transaction volume for fintech and payments platforms.",
     siteName: "Bryan Long Portfolio",
     images: [
       {
         url: "/images/header.jpg",
         width: 1200,
         height: 630,
-        alt: "Bryan Long - Director of Product",
+        alt: "Bryan Long - Senior Director of Product",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bryan Long | Director of Product",
+    title: "Bryan Long | Senior Director of Product",
     description:
-      "Director of Product with extensive expertise building and scaling API developer ecosystems and partner platforms in the payments and FinTech industry.",
+      "Senior Director of Product with 15+ years building and scaling API developer ecosystems processing $100B+ in annual transaction volume for fintech and payments platforms.",
     images: ["/images/header.jpg"],
     creator: "@bryanlongtpm",
   },
@@ -81,9 +81,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Bryan Long",
-              jobTitle: "Director of Product",
+              jobTitle: "Senior Director of Product",
               description:
-                "Director of Product with extensive expertise building and scaling API developer ecosystems and partner platforms in the payments and FinTech industry.",
+                "Senior Director of Product with 15+ years building and scaling API developer ecosystems processing $100B+ in annual transaction volume for fintech and payments platforms.",
               url: siteUrl,
               sameAs: [
                 "https://www.linkedin.com/in/bryanlongtpm/",
